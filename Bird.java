@@ -11,7 +11,7 @@ public class Bird
     
     private int age;
     private String breed;
-    private String color;
+    public String color;
 
     /**
      * Constructor for objects of class Bird
@@ -23,7 +23,14 @@ public class Bird
         this.breed = breed;
         this.age = age;
     }
-
+    public String getColor(){
+        return color;
+    }
+    
+    
+    
+    
+    
     /**
      * An example of a method - replace this comment with your own
      *

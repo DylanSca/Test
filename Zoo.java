@@ -14,7 +14,29 @@ public class Zoo
     public Zoo(){
         zooBirds.add(new Bird("red,","blue jay",2));
         zooBirds.add(new Bird("red,","red cardnial",1));
-    }/**
+        zooBirds.add(new Bird("blue","red cardinal",1));
+        zooBirds.add(new Bird("red,","red cardnial",1));
+        zooBirds.add(new Bird("blue","red cardinal",1));
+        zooBirds.add(new Bird("blue","red cardinal",1));
+        zooBirds.add(new Bird("blue","red cardinal",1));
+        zooBirds.add(new Bird("red,","red cardnial",1));
+        zooBirds.add(new Bird("red,","red cardnial",1));
+    }
+    int countBlueBirds(){
+    int countBlueBirds=0;
+    for(Bird b : zooBirds){
+        if(b.getColor().equals("blue")){
+            countBlueBirds++;
+        }
+    }
+    return countBlueBirds;
+    
+    
+    
+    
+    
+    /**
+     * 
      * for each bird
      * Arraylist<Bird>-Blluebirds
      * print # of Bluebirds
@@ -22,6 +44,6 @@ public class Zoo
      * 
      * 
      */
-    
+}
 }
 
