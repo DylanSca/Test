@@ -22,5 +22,15 @@ public class Salary
   * 
   * 
   */
+ private double hours;
+  private double salary;
+  private double workedhours;
+  private double hourlywage;
+  private double netpay;
+  public void getNetPay(double workedhours,double hourlywage)
+  {
+      salary= workedhours*hourlywage;
+      netpay = salary*0.3;
+    System.out.println(netpay);
   }
-
+}

@@ -14,4 +14,18 @@ public class AgeCalculator
      * 4)print"user can drive"
      * 5)else print"16-age=" years left till eligible
      */
+      
+    private int currentYear = 2025;
+    private int age;
+    private int sum;
+    public void getEligiability(int birthyear)
+    {
+        age=currentYear-birthyear;
+     sum=16-age;
+        if (age>=16)
+        {System.out.println("eliglble to drive");}
+        else{System.out.println(sum+"years left till eligiable");
+    }
+}
+    
 }
